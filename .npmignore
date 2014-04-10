@@ -1,2 +1,4 @@
 node_modules
 storage/*
+test.js
+bench.js

@@ -1,0 +1,41 @@
+{
+  "name": "inst",
+  "version": "0.0.1",
+  "dependencies": {
+    "npm": "~1.4.0",
+    "commander": "~2.0.0"
+  },
+  "description": "Faster npm installs via caching whole node_module dir",
+  "main": "index.js",
+  "devDependencies": {
+    "mocha": "latest",
+    "rimraf": "latest"
+  },
+  "scripts": {
+    "test": "mocha -R spec --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:runk/node-inst.git"
+  },
+  "bin": {
+    "inst": "./bin/inst"
+  },
+  "keywords": [
+    "npm",
+    "proxy",
+    "registry",
+    "cache",
+    "proxy server",
+    "forward proxy"
+  ],
+  "author": "Dmitry Shirokov <deadrunk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/runk/node-inst/issues"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
+
