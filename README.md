@@ -31,7 +31,8 @@ Instead of using `npm install` you use `inst`. That's it.
 
       -h, --help            output usage information
       -V, --version         output the version number
-      -s, --storage [path]  storage path
+      -s, --storage [path]  storage path [~/.npm-inst-cache]
+      -t, --ttl [second]    cache lifetime [86400]
 
 
 ## Limitations

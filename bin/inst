@@ -5,6 +5,12 @@ if (process.platform.indexOf('win') === 0) {
   process.exit(1);
 }
 
+if (!process.env.HOME) {
+  console.error('$HOME env variable is not set. Cannot find suitable dir for cache storage.');
+  console.error('(Consider using `-s {/path/to/dir}` option)')
+  process.exit(1);
+}
+
 var fs = require('fs');
 var program = require('commander');
 var cli = require('../lib/cli');
@@ -13,7 +19,7 @@ var cli = require('../lib/cli');
 program
   .version(JSON.parse(fs.readFileSync(__dirname + '/../package.json', 'utf8')).version)
   .option('-t, --ttl [seconds]', 'cache lifetime in seconds [86400]', parseInt, 86400)
-  .option('-s, --storage [path]', 'storage path', __dirname + '/../storage')
+  .option('-s, --storage [path]', 'storage path', process.env.HOME + '/.npm-inst-cache')
   .parse(process.argv);
 
 cli.run(program);
