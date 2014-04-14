@@ -23,11 +23,9 @@
   },
   "keywords": [
     "npm",
-    "proxy",
     "registry",
     "cache",
-    "proxy server",
-    "forward proxy"
+    "install"
   ],
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "license": "MIT",
