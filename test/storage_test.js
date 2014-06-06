@@ -4,7 +4,7 @@ var assert = require('assert'),
   Storage = require('../lib/storage');
 
 
-describe.only('/lib/storage', function() {
+describe('/lib/storage', function() {
 
   describe('gc()', function() {
     var base = __dirname + '/cache-dir';
