@@ -3,7 +3,9 @@
   "version": "0.1.2",
   "dependencies": {
     "npm": "~1.4.0",
-    "commander": "~2.0.0"
+    "commander": "~2.0.0",
+    "tar": "~1.0.2",
+    "fstream": "~1.0.0"
   },
   "description": "Faster npm installs via caching whole node_module dir",
   "main": "index.js",
