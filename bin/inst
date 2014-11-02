@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-if (process.platform.indexOf('win') === 0) {
-  console.error('This module incompatible with Windows platform');
-  process.exit(1);
-}
-
 if (!process.env.HOME) {
   console.error('$HOME env variable is not set. Cannot find suitable dir for cache storage.');
   console.error('(Consider using `-s {/path/to/dir}` option)')
