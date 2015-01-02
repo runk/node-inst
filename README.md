@@ -33,8 +33,3 @@ Instead of using `npm install` you use `inst`. That's it.
       -V, --version         output the version number
       -s, --storage [path]  storage path [~/.npm-inst-cache]
       -t, --ttl [second]    cache lifetime [86400]
-
-
-## Limitations
-
-Doesn't work on Windows platform (uses system's `tar` tool)
