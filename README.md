@@ -33,3 +33,4 @@ Instead of using `npm install` you use `inst`. That's it.
       -V, --version         output the version number
       -s, --storage [path]  storage path [~/.npm-inst-cache]
       -t, --ttl [second]    cache lifetime [86400]
+      -p, --production      production mode, do not install dev dependencies [false]

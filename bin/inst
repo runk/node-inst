@@ -15,6 +15,7 @@ program
   .version(JSON.parse(fs.readFileSync(__dirname + '/../package.json', 'utf8')).version)
   .option('-t, --ttl [seconds]', 'cache lifetime in seconds [86400]', parseInt, 86400)
   .option('-s, --storage [path]', 'storage path', process.env.HOME + '/.npm-inst-cache')
+  .option('-p, --production', 'production mode, do not install dev dependencies', false)
   .parse(process.argv);
 
 cli.run(program);
