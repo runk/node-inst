@@ -9,9 +9,9 @@ npm cache it still compiles/rebuilds all binary dependencies. Another solutions 
 npm registry mirrors still consume a lot of time for networking / checking / compiling etc.
 
 This module caches *whole* `node_modules` directory and uses check sum of manifest files (*package.json*
-and *npm-shrinkwrap.json*) as a cache key. When you're doing fresh install it saves a tarball with all your
-dependencies and extract it next time when you do install. It's like **30-50** times faster than normal
-install even with "warm" npm cache.
+and *npm-shrinkwrap.json*), version of *node* and *npm* as a cache key. When you're doing fresh install 
+it saves a tarball with all your dependencies and extract it next time when you do install. It's like 
+**30-50** times faster than normal install even with "warm" npm cache.
 
 
 ## Installation
