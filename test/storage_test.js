@@ -12,7 +12,7 @@ describe('/lib/storage', function() {
     beforeEach(function(done) {
       rimraf.sync(base);
 
-      fs.mkdirSync(base, 0755);
+      fs.mkdirSync(base, 0o755);
       fs.writeFileSync(base + '/1.tar', 'data');
       setTimeout(function() {
         fs.writeFileSync(base + '/2.tar', 'data');

@@ -6,9 +6,8 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "fstream": "^1.0.8",
     "npm": "^2.14.13",
-    "tar": "^2.2.1"
+    "tar": "^7.5.9"
   },
   "description": "Faster npm installs via caching whole node_module dir",
   "main": "index.js",
@@ -41,6 +40,6 @@
     "url": "https://github.com/runk/node-inst/issues"
   },
   "engines": {
-    "node": "^4.2"
+    "node": ">=14"
   }
 }
